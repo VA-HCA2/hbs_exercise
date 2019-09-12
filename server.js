@@ -3,6 +3,7 @@ const http = require('http');
 
 const express = require('express');
 const hbs = require('hbs');
+//Require files 
 const fs = require('fs');
 const bodyParser = require('body-parser');
 
@@ -14,6 +15,8 @@ var app = express();
 
 // register hbs partials
 hbs.registerPartials(__dirname + '/views/partials');
+
+console.log(__dirname + '/views/partials')
 // set view engine
 app.set('view engine', 'hbs');
 
